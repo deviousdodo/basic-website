@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# Redirects all other domains to garduri-pvc.ro
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php
